@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://osyp010.github.io</id>
+    <id>https://onesroom.github.io</id>
     <title>Lila&apos;s Cosmos</title>
-    <updated>2021-02-02T12:42:22.151Z</updated>
+    <updated>2021-02-02T12:53:35.625Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://osyp010.github.io"/>
-    <link rel="self" href="https://osyp010.github.io/atom.xml"/>
-    <logo>https://osyp010.github.io/images/avatar.png</logo>
-    <icon>https://osyp010.github.io/favicon.ico</icon>
+    <link rel="alternate" href="https://onesroom.github.io"/>
+    <link rel="self" href="https://onesroom.github.io/atom.xml"/>
+    <logo>https://onesroom.github.io/images/avatar.png</logo>
+    <icon>https://onesroom.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Lila&apos;s Cosmos</rights>
     <entry>
         <title type="html"><![CDATA[布鲁姆《<王制>释义》摘]]></title>
-        <id>https://osyp010.github.io/post/bloom-republic/</id>
-        <link href="https://osyp010.github.io/post/bloom-republic/">
+        <id>https://onesroom.github.io/post/bloom-republic/</id>
+        <link href="https://onesroom.github.io/post/bloom-republic/">
         </link>
         <updated>2021-02-02T12:36:12.000Z</updated>
         <content type="html"><![CDATA[<h1 id="王制释义">《王制》释义</h1>
