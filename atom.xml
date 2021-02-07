@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://onesroom.github.io</id>
     <title>Onesroom</title>
-    <updated>2021-02-07T07:38:29.864Z</updated>
+    <updated>2021-02-07T07:39:04.971Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://onesroom.github.io"/>
     <link rel="self" href="https://onesroom.github.io/atom.xml"/>
@@ -17,7 +17,7 @@
         <updated>2021-02-07T07:36:25.000Z</updated>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Allan Bloom《<王制>释义》摘]]></title>
+        <title type="html"><![CDATA[布鲁姆《<王制>释义》摘]]></title>
         <id>https://onesroom.github.io/post/bloom-republic/</id>
         <link href="https://onesroom.github.io/post/bloom-republic/">
         </link>
