@@ -2051,8 +2051,10 @@ p > code {
     margin-bottom: 10px;
   }
 }
-body {
-      background-color: #868e96;
+.bg-color .bg-color {
+      background: transparent !important;
+    }body {
+      background-color: #fff;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2076,7 +2078,7 @@ body {
       border-bottom-color: #555;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #eeeeeefe;
+      background: #eeeeee4c;
     }h1, h2, h3, h4, h5, h6 {
       color: #555;
     }
@@ -2123,11 +2125,11 @@ body {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #f9f9f9fe;
+      background: #f9f9f94c;
     }
 
     .nav-item:hover {
-      background: #f9f9f9fe;
+      background: #f9f9f94c;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2171,7 +2173,7 @@ body {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #adb5bdfe;
+      background-color: #ffffff4c;
     }
     .site-meta {
       background: #000 !important;
@@ -2180,13 +2182,13 @@ body {
       background: #000;
     }
     .brand {
-      background: #000000fe;
+      background: #0000004c;
     }
     .main-title, .brand {
       color: #FFF !important;
     }
     .mist .site-title i {
-      background: #FFFFFFfe;
+      background: #FFFFFF4c;
     }.box-scale > #landlord {
       transform: scale(0.7);
     }.box-shadow-wrapper {
