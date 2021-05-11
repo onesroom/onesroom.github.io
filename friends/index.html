@@ -9,7 +9,7 @@
 <meta name="description" content="万事屋">
 <meta name="theme-color" content="#000">
 <title>Onesroom</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/favicon.ico?v=1620750160111">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/favicon.ico?v=1620750581129">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/media/css/mist.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -1079,59 +1079,59 @@
 &lt;li&gt;/usr/share - application support and data files&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;basic-linux-commands&#34;&gt;basic linux commands&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ passwd
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$passwd
 
-$ whoami
+$whoami
 
-$ sudo whoami
+$sudo whoami
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;man-apropos&#34;&gt;man; apropos&lt;/h3&gt;
 &lt;p&gt;Man pages are typically the quickest way to find documentation on a given command&lt;br&gt;
 &lt;img src=&#34;_v_images/20210325075354763_10797.png&#34; alt=&#34;&#34; width=&#34;600&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# basic
-$ man passwd
+$man passwd
 # key word search
-$ man -k passwd
+$man -k passwd
 # key word search with regular expression
-$ man -k &#39;^passwd$&#39;
+$man -k &#39;^passwd$&#39;
 # referencing the appropriate section
-$ man 5 passwd
+$man 5 passwd
 # if -k with &#39;nothing appropriate&#39;
-$ sudo mandb
+$sudo mandb
 # Suppose that we want to partition a hard drive but can’t remember the name of the command
-$ apropos partition
+$apropos partition
 # in fact, apropos == man -k
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;ls&#34;&gt;ls&lt;/h3&gt;
 &lt;p&gt;The ls command prints out a basic file listing to the screen.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# display all files(including hidden ones)
-$ ls -a
+$ls -a
 # display each file on a single line
-$ ls -l
+$ls -l
 # altogether
-$ ls -al
+$ls -al
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;cd-pwd&#34;&gt;cd; pwd&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# change to a specific dir
-$ cd /usr/share/metasploit-framework/
+$cd /usr/share/metasploit-framework/
 # print current dir
-$ pwd /usr/share/metasploit-framework
+$pwd /usr/share/metasploit-framework
 # return to home dir of the user
-$ cd ~
+$cd ~
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;mkdir&#34;&gt;mkdir&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# when naming a dir, use hyphens or underscores instead of space, to save trouble
-$ mkdir module one
-$ ls 
+$mkdir module one
+$ls 
 module one
-$ rm -rf module/ one/
-$ mkdir &amp;quot;module one&amp;quot;
-$ cd module\ one/ 
+$rm -rf module/ one/
+$mkdir &amp;quot;module one&amp;quot;
+$cd module\ one/ 
 kali@kali:~/notes/module one$
 
 # make multiple dirs at once
-$ mkdir -p tst/{recon,exploit,report}
-$ ls -1 tst/ 
+$mkdir -p tst/{recon,exploit,report}
+$ls -1 tst/ 
 exploit 
 recon 
 report
@@ -1141,20 +1141,20 @@ report
 # search through the directories that are defined in the $PATH environment variable for a given file name. 
 # This variable contains a listing of directories that Kali searches when a command is issued without its path. 
 # If a match is found, which returns the full path to the file as shown below
-$ echo $PATH
-$ which sbd
-$ which whoami
-$ which rm
+$echo $PATH
+$which sbd
+$which whoami
+$which rm
 
 # locate searches a built-in database named locate.db rather than the entire hard disk itself
 # To manually update the locate.db database, you can use the updatedb command
-$ sudo updatedb
-$ locate sbd.exe
+$sudo updatedb
+$locate sbd.exe
 
 # perform a recursive search 
 # starting from the root file system directory 
 # and look for any file that starts with the letters “sbd”
-$ sudo find / -name sbd*
+$sudo find / -name sbd*
 
 # find can search for files and directories by more than just the name. 
 # With find, we can search by file age, size, owner, file type, timestamp, permissions, and more
@@ -1267,9 +1267,9 @@ File is owned by user uname (numeric user ID allowed).&lt;/p&gt;
 &lt;li&gt;using a secure, encrypted protocol.&lt;/li&gt;
 &lt;li&gt;The SSH service is TCP-based and &lt;code&gt;listens by default on port 22&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo systemctl start ssh
-$ sudo systemctl enable ssh
-$ sudo ss -antlp | grep sshd
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$sudo systemctl start ssh
+$sudo systemctl enable ssh
+$sudo ss -antlp | grep sshd
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;http&#34;&gt;HTTP&lt;/h3&gt;
 &lt;p&gt;The Apache HTTP service is often used during a penetration test,&lt;/p&gt;
@@ -1278,9 +1278,9 @@ $ sudo ss -antlp | grep sshd
 &lt;li&gt;or providing a platform for downloading files to a victim machine.&lt;/li&gt;
 &lt;li&gt;The HTTP service is &lt;code&gt;TCP-based&lt;/code&gt; and &lt;code&gt;listens by default on port 80&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo systemctl start apache2
-$ sudo systemctl enable apache2
-$ sudo ss -antlp | grep apache
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$sudo systemctl start apache2
+$sudo systemctl enable apache2
+$sudo ss -antlp | grep apache
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;more-services&#34;&gt;more services&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ systemctl list-unit-files
