@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://onesroom.github.io</id>
     <title>Onesroom</title>
-    <updated>2021-05-11T16:10:25.577Z</updated>
+    <updated>2021-05-11T16:22:46.393Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://onesroom.github.io"/>
     <link rel="self" href="https://onesroom.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://onesroom.github.io/images/avatar.png</logo>
     <icon>https://onesroom.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Onesroom</rights>
+    <entry>
+        <title type="html"><![CDATA[OSCP日记 | 教材02章kali篇]]></title>
+        <id>https://onesroom.github.io/post/oscp-kali/</id>
+        <link href="https://onesroom.github.io/post/oscp-kali/">
+        </link>
+        <updated>2021-05-11T16:16:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>5/12  未完待续，Text Searching and Manipulation部分需要先搞定一下正则表达式，拖了好久。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>5/12  未完待续，Text Searching and Manipulation部分需要先搞定一下正则表达式，拖了好久。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[单向度的人 & 爱的再教育]]></title>
         <id>https://onesroom.github.io/post/eros0/</id>
