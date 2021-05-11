@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://onesroom.github.io</id>
     <title>Onesroom</title>
-    <updated>2021-02-07T08:45:20.729Z</updated>
+    <updated>2021-05-11T16:08:38.582Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://onesroom.github.io"/>
     <link rel="self" href="https://onesroom.github.io/atom.xml"/>
@@ -17,35 +17,23 @@
         </link>
         <updated>2021-02-07T07:36:25.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
-<p>技术、权力、合理性三者达成了共谋，创造出了一种总体性的生活形式或社会系统，在其中呈现出这样的表象：劳役和统治已被摆脱、自由和解放已经达成、人民生活于最好的理性制度之中。</p>
-</blockquote>
-<blockquote>
-<p>任何解放都有赖于对这种状态的觉悟——对事实上的不自由状态的觉悟。</p>
-</blockquote>
-<blockquote>
-<p>诗歌和形而上学的自我辩护：虚构的话语道出了真正的真实，道出了属于人的真理。</p>
-</blockquote>
-<blockquote>
-<p>乌托邦与反乌托邦：理想国、美丽新世界与单向度社会</p>
-</blockquote>
-<blockquote>
-<p>哲学的爱欲是渴求重新变得轻盈，是认识自己的自然并且成全自己的自由。</p>
+<ul>
+<li>技术、权力、合理性三者达成了共谋，创造出了一种总体性的生活形式或社会系统，在其中呈现出这样的表象：劳役和统治已被摆脱、自由和解放已经达成、人民生活于最好的理性制度之中。</li>
+<li>任何解放都有赖于对这种状态的觉悟——对事实上的不自由状态的觉悟。</li>
+<li>诗歌和形而上学的自我辩护：虚构的话语道出了真正的真实，道出了属于人的真理。</li>
+<li>乌托邦与反乌托邦：理想国、美丽新世界与单向度社会</li>
+<li>哲学的爱欲是渴求重新变得轻盈，是认识自己的自然并且成全自己的自由。</li>
+</ul>
 </blockquote>
 ]]></summary>
         <content type="html"><![CDATA[<blockquote>
-<p>技术、权力、合理性三者达成了共谋，创造出了一种总体性的生活形式或社会系统，在其中呈现出这样的表象：劳役和统治已被摆脱、自由和解放已经达成、人民生活于最好的理性制度之中。</p>
-</blockquote>
-<blockquote>
-<p>任何解放都有赖于对这种状态的觉悟——对事实上的不自由状态的觉悟。</p>
-</blockquote>
-<blockquote>
-<p>诗歌和形而上学的自我辩护：虚构的话语道出了真正的真实，道出了属于人的真理。</p>
-</blockquote>
-<blockquote>
-<p>乌托邦与反乌托邦：理想国、美丽新世界与单向度社会</p>
-</blockquote>
-<blockquote>
-<p>哲学的爱欲是渴求重新变得轻盈，是认识自己的自然并且成全自己的自由。</p>
+<ul>
+<li>技术、权力、合理性三者达成了共谋，创造出了一种总体性的生活形式或社会系统，在其中呈现出这样的表象：劳役和统治已被摆脱、自由和解放已经达成、人民生活于最好的理性制度之中。</li>
+<li>任何解放都有赖于对这种状态的觉悟——对事实上的不自由状态的觉悟。</li>
+<li>诗歌和形而上学的自我辩护：虚构的话语道出了真正的真实，道出了属于人的真理。</li>
+<li>乌托邦与反乌托邦：理想国、美丽新世界与单向度社会</li>
+<li>哲学的爱欲是渴求重新变得轻盈，是认识自己的自然并且成全自己的自由。</li>
+</ul>
 </blockquote>
 ]]></content>
     </entry>
