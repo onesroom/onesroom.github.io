@@ -9,7 +9,7 @@
 <meta name="description" content="万事屋">
 <meta name="theme-color" content="#000">
 <title>Onesroom</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/favicon.ico?v=1620750758779">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/favicon.ico?v=1622349637213">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/media/css/mist.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/onesroom/onesroom.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -191,19 +191,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">1</span>
         <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">1</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -239,7 +239,7 @@
   <div class="archive-timeline-box">
     <div class="archive-timeline-title">
       
-        <h2 class="language" data-lan="archives" data-count="3">唔...目前共计3篇笔记</h2>
+        <h2 class="language" data-lan="archives" data-count="2">唔...目前共计2篇笔记</h2>
       
     </div>
     
@@ -249,19 +249,6 @@
           <h2 class="tag-year">2021</h2>
         </div>    
         
-      
-      <a href="https://onesroom.github.io/post/oscp-kali/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              05-12
-              <small>OSCP日记 | 教材02章kali篇</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
-    
-      
       
       <a href="https://onesroom.github.io/post/eros0/">
         <div class="motion-warpper tag-archive-node">
@@ -1048,285 +1035,6 @@
     <div class="result" id="result">
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://onesroom.github.io/post/oscp-kali/"" data-c="
-          &lt;p&gt;5/12  未完待续，Text Searching and Manipulation部分需要先搞定一下正则表达式，拖了好久。&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;h2 id=&#34;pwk-vm-download&#34;&gt;PWK VM DOWNLOAD&lt;/h2&gt;
-&lt;p&gt;The download URL, size, and SHA1 checksum for the PWK VM are as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=&#34;https://images.offensive-security.com/pwk-kali-vm.7z&#34;&gt;https://images.offensive-security.com/pwk-kali-vm.7z&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Size:&lt;/strong&gt; 3.8 GB&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SHA1:&lt;/strong&gt; 3f1004d800ed9b6fca79606f55cd4a34726e0c70&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This Kali VM has the following credentials:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Username:&lt;/strong&gt; root  / kali&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; toor  / kali&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;always remember to take a snapshot when necessary&lt;/p&gt;
-&lt;h2 id=&#34;kali-file-system&#34;&gt;kali file system&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;/bin - basic programs (ls, cd, cat, etc.)&lt;/li&gt;
-&lt;li&gt;/sbin - system programs (fdisk, mkfs, sysctl, etc)&lt;/li&gt;
-&lt;li&gt;/etc - configuration files&lt;/li&gt;
-&lt;li&gt;/tmp - temporary files (typically deleted on boot)&lt;/li&gt;
-&lt;li&gt;/usr/bin - applications (apt, ncat, nmap, etc.)&lt;/li&gt;
-&lt;li&gt;/usr/share - application support and data files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;basic-linux-commands&#34;&gt;basic linux commands&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$passwd
-
-$whoami
-
-$sudo whoami
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;man-apropos&#34;&gt;man; apropos&lt;/h3&gt;
-&lt;p&gt;Man pages are typically the quickest way to find documentation on a given command&lt;br&gt;
-&lt;img src=&#34;_v_images/20210325075354763_10797.png&#34; alt=&#34;&#34; width=&#34;600&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# basic
-$man passwd
-# key word search
-$man -k passwd
-# key word search with regular expression
-$man -k &#39;^passwd$&#39;
-# referencing the appropriate section
-$man 5 passwd
-# if -k with &#39;nothing appropriate&#39;
-$sudo mandb
-# Suppose that we want to partition a hard drive but can’t remember the name of the command
-$apropos partition
-# in fact, apropos == man -k
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;ls&#34;&gt;ls&lt;/h3&gt;
-&lt;p&gt;The ls command prints out a basic file listing to the screen.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# display all files(including hidden ones)
-$ls -a
-# display each file on a single line
-$ls -l
-# altogether
-$ls -al
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;cd-pwd&#34;&gt;cd; pwd&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# change to a specific dir
-$cd /usr/share/metasploit-framework/
-# print current dir
-$pwd /usr/share/metasploit-framework
-# return to home dir of the user
-$cd ~
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;mkdir&#34;&gt;mkdir&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# when naming a dir, use hyphens or underscores instead of space, to save trouble
-$mkdir module one
-$ls 
-module one
-$rm -rf module/ one/
-$mkdir &amp;quot;module one&amp;quot;
-$cd module\ one/ 
-kali@kali:~/notes/module one$
-
-# make multiple dirs at once
-$mkdir -p tst/{recon,exploit,report}
-$ls -1 tst/ 
-exploit 
-recon 
-report
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;which-locate-find&#34;&gt;which; locate; find&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# which - locate a command
-# search through the directories that are defined in the $PATH environment variable for a given file name. 
-# This variable contains a listing of directories that Kali searches when a command is issued without its path. 
-# If a match is found, which returns the full path to the file as shown below
-$echo $PATH
-$which sbd
-$which whoami
-$which rm
-
-# locate searches a built-in database named locate.db rather than the entire hard disk itself
-# To manually update the locate.db database, you can use the updatedb command
-$sudo updatedb
-$locate sbd.exe
-
-# perform a recursive search 
-# starting from the root file system directory 
-# and look for any file that starts with the letters “sbd”
-$sudo find / -name sbd*
-
-# find can search for files and directories by more than just the name. 
-# With find, we can search by file age, size, owner, file type, timestamp, permissions, and more
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;man-for-find&#34;&gt;man for find&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;GNU find searches the directory tree rooted at each &lt;code&gt;given starting-point&lt;/code&gt; by evaluating the&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;given expression&lt;/code&gt; from left to right, according to the &lt;code&gt;rules of precedence&lt;/code&gt; ,&lt;/li&gt;
-&lt;li&gt;until the outcome is known (the left hand side is false  for  and operations, true for or),&lt;/li&gt;
-&lt;li&gt;at which point find moves on to the next file name.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;If no starting-point is specified, &#39;.&#39; is assumed.&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;The  -H, -L and -P options control the treatment of symbolic links.&lt;/li&gt;
-&lt;li&gt;-D debugopts : Print diagnostic information.&lt;/li&gt;
-&lt;li&gt;-Olevel : Enables query optimisation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;The part of the command line after the list of starting points is the expression.  This is a kind of query specification describing how we match  files  and what we do with the files that were matched.  An expression is composed of a sequence of things:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   Tests  Tests  return  a  true  or false value, usually on the basis of some property of a file we are considering.  The -empty test for example is true only
-          when the current file is empty.
-
-   Actions
-          Actions have side effects (such as printing something on the standard output) and return either true or false, usually based on whether or  not  they
-          are successful.  The -print action for example prints the name of the current file on the standard output.
-
-   Global options
-          Global  options  affect the operation of tests and actions specified on any part of the command line.  Global options always return true.  The -depth
-          option for example makes find traverse the file system in a depth-first order.
-
-   Positional options
-          Positional options affect only tests or actions which follow them.  Positional options always return true.  The -regextype option for example is  po‐
-          sitional, specifying the regular expression dialect for regular expressions occurring later on the command line.
-
-   Operators
-          Operators join together the other items within the expression.  They include for example -o (meaning logical OR) and -a (meaning logical AND).  Where
-          an operator is missing, -a is assumed.
-
-   The -print action is performed on all files for which the whole expression is true, unless it contains an action other than -prune or -quit.  Actions  which
-   inhibit the default -print are -delete, -exec, -execdir, -ok, -okdir, -fls, -fprint, -fprintf, -ls, -print and -printf.
-
-   The -delete action also acts like an option (since it implies -depth).
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;Tests Part&lt;/p&gt;
-&lt;p&gt;A numeric argument n can be specified to tests (like -amin, -mtime, -gid, -inum, -links, -size, -uid and -used) as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   +n     for greater than n,
-
-   -n     for less than n,
-
-   n      for exactly n.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;-mtime n&lt;br&gt;
-File&#39;s data was last modified less than, more than or exactly n*24 hours ago.&lt;br&gt;
-When find figures out how many 24-hour periods ago the file was last modified, any fractional part is ignored&lt;br&gt;
-so. exg. to match -mtime +1, a file has to have been modified at least two days ago.&lt;/p&gt;
-&lt;p&gt;-user uname&lt;br&gt;
-File is owned by user uname (numeric user ID allowed).&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Actions Part&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    -exec command ;
-          Execute command; true if 0 status is returned.  All following arguments to find are taken to be arguments to the command until an argument consisting
-          of `;&#39; is encountered.  The string `{}&#39; is replaced by the current file name being processed everywhere it occurs in the arguments  to  the  command,
-          not just in arguments where it is alone, as in some versions of find.  Both of these constructions might need to be escaped (with a `\&#39;) or quoted to
-          protect them from expansion by the shell.  See the EXAMPLES section for examples of the use of the -exec option.  The specified command is  run  once
-          for  each matched file.  The command is executed in the starting directory.  There are unavoidable security problems surrounding use of the -exec ac‐
-          tion; you should use the -execdir option instead.
-
-   -exec command {} +
-          This variant of the -exec action runs the specified command on the selected files, but the command line is built by appending each selected file name
-          at the end; the total number of invocations of the command will be much less than the number of matched files.  The command line is built in much the
-          same way that xargs builds its command lines.  Only one instance of `{}&#39; is allowed within the command, and (when find is being invoked from a shell)
-          it  should be quoted (for example, &#39;{}&#39;) to protect it from interpretation by shells.  The command is executed in the starting directory.  If any in‐
-          vocation with the `+&#39; form returns a non-zero value as exit status, then find returns a non-zero exit status.  If find encounters an error, this  can
-          sometimes  cause  an immediate exit, so some pending commands may not be run at all.  For this reason -exec my-command ... {} \+ -quit may not result
-          in my-command actually being run.  This variant of -exec always returns true.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;p&gt;exg.&lt;/p&gt;
-&lt;p&gt;find . -type f -exec file &#39;{}&#39; ;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   Runs  `file&#39; on every file in or below the current directory.  Notice that the braces are enclosed in single quote marks to protect them from interpretation
-   as shell script punctuation.  The semicolon is similarly protected by the use of a backslash, though single quotes could have been used in that case also.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;find $HOME -mtime 0&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   Search for files in your home directory which have been modified in the last twenty-four hours.  This command works this way because  the  time  since  each
-   file was last modified is divided by 24 hours and any remainder is discarded.  That means that to match -mtime 0, a file will have to have a modification in
-   the past which is less than 24 hours ago.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;exercises&#34;&gt;Exercises&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Use man to look at the man page for one of your preferred commands.&lt;/li&gt;
-&lt;li&gt;Use man to look for a keyword related to file compression.  &lt;code&gt;man -k compression&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Use which to locate the pwd command on your Kali virtual machine.&lt;/li&gt;
-&lt;li&gt;Use locate to locate wce32.exe on your Kali virtual machine. &lt;code&gt;locate wce32.exe&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Use find to identify any file (not directory) modified in the last day, NOT owned by the root user and execute ls -l on them. Chaining/piping commands is NOT allowed! &lt;code&gt;find . -type f -not -user root -mtime 0 -exec ls -l {} \;&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;systemctl-kali-linux-services&#34;&gt;systemctl - kali linux services&lt;/h2&gt;
-&lt;p&gt;We can use &lt;code&gt;systemctl&lt;/code&gt; to enable and disable most services within Kali Linux.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;to have the xxx service start automatically at boot time : &lt;code&gt;sudo systemctl enable xxx&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;to start the xxx service manually: &lt;code&gt;sudo systemctl start xxx&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;to check the xxx port/service status : &lt;code&gt;sudo ss -antlp | grep xxx&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;ssh&#34;&gt;SSH&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The Secure SHell (SSH)43 service is most commonly used &lt;code&gt;to remotely access a computer&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;using a secure, encrypted protocol.&lt;/li&gt;
-&lt;li&gt;The SSH service is TCP-based and &lt;code&gt;listens by default on port 22&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$sudo systemctl start ssh
-$sudo systemctl enable ssh
-$sudo ss -antlp | grep sshd
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;http&#34;&gt;HTTP&lt;/h3&gt;
-&lt;p&gt;The Apache HTTP service is often used during a penetration test,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;either for hosting a site,&lt;/li&gt;
-&lt;li&gt;or providing a platform for downloading files to a victim machine.&lt;/li&gt;
-&lt;li&gt;The HTTP service is &lt;code&gt;TCP-based&lt;/code&gt; and &lt;code&gt;listens by default on port 80&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$sudo systemctl start apache2
-$sudo systemctl enable apache2
-$sudo ss -antlp | grep apache
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;more-services&#34;&gt;more services&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ systemctl list-unit-files
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;searching-installing-and-removing-tools&#34;&gt;Searching, Installing, and Removing Tools&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Advanced Package Tool (APT)&lt;/li&gt;
-&lt;li&gt;APT is a set of tools that helps manage packages, or applications, on a Debian-based system&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;apt-update&#34;&gt;apt update&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;to update the list of available packages (apt database), including information related to their versions, descriptions, etc&lt;br&gt;
-&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;apt-upgrade&#34;&gt;apt upgrade&lt;/h3&gt;
-&lt;p&gt;升级之前留个原版的快照，方便作业和帮助、测试；软件的最新版本和受信任版本之间的平衡&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;upgrade the installed packages and core system to the latest versions&lt;br&gt;
-&lt;code&gt;sudo apt upgrade&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;sudo apt upgrade metasploit-framework&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;apt-cache-search-apt-show&#34;&gt;apt-cache search ; apt show&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The apt-cache search command displays much of the information stored in the internal cached package database&lt;/li&gt;
-&lt;li&gt;to find out whether or not the application is present in the Kali Linux repositories&lt;/li&gt;
-&lt;li&gt;it looks for the requested keyword in the package’s description rather than the package name itself.&lt;br&gt;
-&lt;code&gt;sudo apt-cache search pure-ftpd&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;得到的结果中，有一个package的名称为xxx，不包含pure-ftpd关键字，那么应该是它的description中包含了，用apt show查下这个包看看&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;To confirm that the resource-agents package description really contains the “pure-ftpd” keyword, pass the package name to apt show&lt;br&gt;
-&lt;code&gt;sudo apt show xxx&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;apt-install-apt-remove-purge&#34;&gt;apt install ; apt remove --purge&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;sudo apt install pure-ftpd&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;apt remove removes all package data, but leaves usually small (modified) user configuration files behind&lt;/li&gt;
-&lt;li&gt;adding the --purge option removes all the leftovers.&lt;br&gt;
-&lt;code&gt;sudo apt remove --purge pure-ftpd&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;dpkg&#34;&gt;dpkg&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;dpkg will not install any dependencies that the package might require&lt;/li&gt;
-&lt;li&gt;provide the -i or --install option and the path to the .deb package file&lt;/li&gt;
-&lt;li&gt;This assumes that the .deb file of the package to install has been previously downloaded or obtained&lt;br&gt;
-&lt;code&gt;sudo dpkg -i man-db_2.7.0.2-5_amd64.deb&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-">OSCP日记 | 教材02章kali篇</a>
-      </div>
-      
-      <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://onesroom.github.io/post/eros0/"" data-c="
           &lt;blockquote&gt;
 &lt;ul&gt;
@@ -1650,12 +1358,13 @@ Clitophon闯入维护T：正义是‘看起来’是强者利益的东西，正�
 我呢，就是万事屋的临时工，&lt;br&gt;
 会在这里做做装修，添置一些或无聊或有趣的东西。&lt;/p&gt;
 &lt;p&gt;很长时间万事屋是空的，没有人知道，&lt;br&gt;
-我添置了一点东西，仍然没有让人知道这里的存在。&lt;br&gt;
-由于它存在的目的非常模糊，充满不确定性，所以它随时都可能变化模样或者消失掉。&lt;/p&gt;
-&lt;p&gt;我还是决定，开放给我的朋友们看看。&lt;br&gt;
-知道大家会来参观、小憩，&lt;br&gt;
-我这个小临时工，就有动力干活儿。&lt;/p&gt;
+我添置了一点东西，仍然没有让人知道这里。&lt;br&gt;
+它存在的目的非常模糊，充满不确定性，所以它随时都可能变化模样或者消失掉，&lt;br&gt;
+还是不被知道为妙。&lt;/p&gt;
 &lt;p&gt;2021/05/12&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我决定系统地学习CS，在此上传我的学习日志。&lt;/p&gt;
+&lt;p&gt;2020/05/30&lt;/p&gt;
 ">这是哪里？</a>
       </div>
       
